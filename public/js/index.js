@@ -1,29 +1,28 @@
-
-   var MyLibrary = function (selector) {
-
+var MyLibrary = function(){
     this.elements = [];
+};
 
-    // if (selector[0] === "#")
-    //   elements = [document.getElementById(selector.slice(1))];
-    
-    // if (selector[0] === ".") 
-    //   elements = document.getElementsByClassName(selector.slice(1))
- 
-    // if (selector[0] !== "#" && selector[0] !== ".")
-    //   elements = document.getElementsByTagName(selector)
-    
-    // var toArray = function(likeArrayObject){
-    //     return Array.prototype.slice.call(likeArrayObject)
-    // }
-   
-    // return toArray(elements).forEach(function(ele){
-    //   console.log(ele)
-    // })
-    // return this.elements;
-  };
-
- MyLibrary.prototype.isId = function(selector) {
-    this.elements = selector.slice(1);
-    // [document.getElementById(
+ MyLibrary.prototype.isTag = function(selector) {
+    this.elements = document.getElementsByTagName(selector);
     return this.elements;
-  };
+};
+
+MyLibrary.prototype.isClass = function(selector){
+    this.elements = document.getElementsByClassName(selector);
+    return this.elements;
+};
+
+MyLibrary.prototype.isId = function(selector){
+    this.elements = [document.getElementById(selector)];
+    return this.elements;
+};
+
+
+
+
+var gio = new MyLibrary();
+console.log(gio, 'gio');
+// console.log(Array.prototype.slice.call(gio.isTag('div')));
+// console.log(Array.prototype.slice.call(gio.isClass('some_class')));
+// console.log(Array.prototype.slice.call(gio.isId('some_id')));
+// console.log(Array.prototype.slice.call(gio.isId('some_other_id')));

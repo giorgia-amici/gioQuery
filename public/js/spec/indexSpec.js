@@ -7,12 +7,12 @@ describe('my own jQuery library', function(){
 	});
 
 	it('is loaded', function(){
-		// console.log(gioQuery, 'here')
+		console.log(gioQuery);
 		expect(gioQuery).toBeDefined();
 	});
 
 	it('returns an array', function(){
-		expect(gioQuery.isId('#div')).toEqual('div');
+		expect(gioQuery.isClass('.some_class')).toBeTruthy();
 	});
 
 	// it('has a method isId', function(){
@@ -21,10 +21,11 @@ describe('my own jQuery library', function(){
 
 	// it('should recognise if a selector is an id', function(){
 	// 	// gioQuery.isId('#div');
-	// 	// console.log(gioQuery, "look here");
-	// 	// expect(gioQuery.isId('#div')).toBeDefined();
-	// 	// console.log(gioQuery[0], 'jjjj');
-	// 	// expect(gioQuery.elements).toEqual(['div']);
-	// 	// expect(gioQuery.isId('#div')).toEqual(['div']);
 	// });	
+
+
+
+
+
+
 });
