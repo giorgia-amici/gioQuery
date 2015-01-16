@@ -12,7 +12,7 @@ describe('my own jQuery library', function(){
 	});
 
 	it('returns an array', function(){
-		expect(gioQuery()).toEqual(['1,2,3']);
+		expect(gioQuery.isId('#div')).toEqual('div');
 	});
 
 	// it('has a method isId', function(){

@@ -22,7 +22,8 @@
     // return this.elements;
   };
 
- MyLibrary.prototype.isId = function() {
-    this.elements = [document.getElementById(selector.slice(1))];
+ MyLibrary.prototype.isId = function(selector) {
+    this.elements = selector.slice(1);
+    // [document.getElementById(
     return this.elements;
   };
