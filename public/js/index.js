@@ -17,6 +17,13 @@ MyLibrary.prototype.isId = function(selector){
     return this.elements;
 };
 
+// The following will not save the added elements, because the .add() 
+// method creates a new set and leaves the original set in pdiv unchanged
+
+MyLibrary.prototype.addMe = function(){
+
+};
+
 
 
 
