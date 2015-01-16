@@ -22,7 +22,7 @@
     // return this.elements;
   };
 
- MyLibrary.prototype.isId = function(selector) {
-    // code goes here
-    return true
-  }
+ MyLibrary.prototype.isId = function() {
+    this.elements = [document.getElementById(selector.slice(1))];
+    return this.elements;
+  };
