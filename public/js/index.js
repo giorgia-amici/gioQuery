@@ -1,4 +1,5 @@
 var MyLibrary = function(){
+    this.myEle
     this.elements = [];
 };
 
@@ -30,6 +31,13 @@ MyLibrary.prototype.fetchElementFromDOM = function(selector){
     return this.elements
 };
 
+// gio.fetchElementFromDOM('div').forEach(function(ele){example.push(ele)}
+
+// gio.split("").forEach(function(ele, index){if(ele === '.') {console.log(index, gio.length)}}
+
+MyLibrary.prototype.createCustomElement = function(string){
+    return this.myEle = document.createElement(string);
+};
 
 // MyLibrary.prototype.addMe = function(){
 
@@ -39,8 +47,4 @@ MyLibrary.prototype.fetchElementFromDOM = function(selector){
 
 
 var gio = new MyLibrary();
-// console.log(gio, 'gio');
-// console.log(Array.prototype.slice.call(gio.isTag('div')));
-// console.log(Array.prototype.slice.call(gio.isClass('some_class')));
-// console.log(Array.prototype.slice.call(gio.isId('some_id')));
-// console.log(Array.prototype.slice.call(gio.isId('some_other_id')));
+// 
