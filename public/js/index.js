@@ -39,9 +39,9 @@ MyLibrary.prototype.createCustomElement = function(string){
     return this.myEle = document.createElement(string);
 };
 
-// MyLibrary.prototype.addMe = function(){
+MyLibrary.prototype.addMe = function(){
 
-// };
+};
 
 
 
