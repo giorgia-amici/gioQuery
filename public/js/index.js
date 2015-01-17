@@ -3,31 +3,33 @@ var MyLibrary = function(){
 };
 
  MyLibrary.prototype.isTag = function(selector) {
-    this.elements = document.getElementsByTagName(selector);
+    selector[0] !== '.' && selector[0] !== '#'
+    // this.elements = document.getElementsByTagName(selector);
     return true;
 };
 
-MyLibrary.prototype.isClass = function(selector){
-    this.elements = document.getElementsByClassName(selector);
-    return true;
-};
+// MyLibrary.prototype.isClass = function(selector){
+//     this.elements = document.getElementsByClassName(selector);
+//     return true;
+// };
 
-MyLibrary.prototype.isId = function(selector){
-    this.elements = [document.getElementById(selector)];
-    return true;
-};
+// MyLibrary.prototype.isId = function(selector){
+//     this.elements = [document.getElementById(selector)];
+//     return true;
+// };
 
-// The following will not save the added elements, because the .add() 
-// method creates a new set and leaves the original set in pdiv unchanged
+// // The following will not save the added elements, because the .add() 
+// // method creates a new set and leaves the original set in pdiv unchanged
 
-MyLibrary.prototype.fetchElementFromDOM = function(selector){
+// MyLibrary.prototype.fetchElementFromDOM = function(selector){
+//     // if selector is a tag
+//     document.getElementsByTagName(selector);
+// };
 
-};
 
+// MyLibrary.prototype.addMe = function(){
 
-MyLibrary.prototype.addMe = function(){
-
-};
+// };
 
 
 
