@@ -47,8 +47,12 @@ MyLibrary.prototype.addMyClass = function(selector, myNewClassName){
     this.elements.forEach(function(element){
         element.className = myNewClassName;
     })
-    // gio[0].className
 };
+
+MyLibrary.prototype.getAll = function(){
+    return document.all
+};
+
 
 
 
