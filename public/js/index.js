@@ -29,17 +29,25 @@ MyLibrary.prototype.fetchElementFromDOM = function(selector){
     if(this.isId(selector) === true){
         this.elements = Array.prototype.slice.call([document.getElementById(selector.slice(1))])
     }
-    return this.elements
+    return this.elements 
 };
 
 MyLibrary.prototype.createCustomElement = function(string){
     return this.myEle = document.createElement(string);
 };
 
-MyLibrary.prototype.addMe = function(string, selector){
+MyLibrary.prototype.addMyElement = function(string, selector){
     this.createCustomElement(string)
-    this.myEle.innerHTML = '';
-    this.fetchElementFromDOM(selector).push(this.myEle)
+    this.myEle.innerHTML = '';    //has to have a content
+    this.fetchElementFromDOM(selector).push(this.myEle);
+};
+
+MyLibrary.prototype.addMyClass = function(selector, myNewClassName){
+    this.fetchElementFromDOM(selector);
+    this.elements.forEach(function(element){
+        element.className = myNewClassName;
+    })
+    // gio[0].className
 };
 
 
