@@ -3,40 +3,31 @@ var MyLibrary = function(){
 };
 
  MyLibrary.prototype.isTag = function(selector) {
-    console.log(selector[0])
     if(selector[0] !== '.' && selector[0] !== '#')
-    // this.elements = document.getElementsByTagName(selector);
     return true;
 };
 
 MyLibrary.prototype.isClass = function(selector){
     if(selector[0] === '.')
-    // this.elements = document.getElementsByClassName(selector);
     return true;
 };
 
 MyLibrary.prototype.isId = function(selector){
     if(selector[0] === '#')
-    // this.elements = [document.getElementById(selector)];
     return true;
 };
 
-
 MyLibrary.prototype.fetchElementFromDOM = function(selector){
-// if selector is a tag
     if(this.isTag(selector) === true){
-        this.elements = document.getElementsByTagName(selector.slice(1))
-        console.log('i am a tag')
+        this.elements = Array.prototype.slice.call(document.getElementsByTagName(selector))
     }
-// if selector is a class
     if(this.isClass(selector) === true){
-        console.log('i am a class')
+        this.elements = Array.prototype.slice.call(document.getElementsByClassName(selector.slice(1)))
     }
-// if selector is an id
     if(this.isId(selector) === true){
-        console.log('i am an id')
+        this.elements = Array.prototype.slice.call([document.getElementById(selector.slice(1))])
     }
-
+    return this.elements
 };
 
 
