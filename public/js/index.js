@@ -1,5 +1,6 @@
 var MyLibrary = function(){
     this.myEle
+    this.newEle = [];
     this.elements = [];
 };
 
@@ -36,9 +37,8 @@ MyLibrary.prototype.createCustomElement = function(string){
 };
 
 MyLibrary.prototype.addMe = function(string, selector){
-// this method is really peculiar!be aware that before adding you need to have a content
     this.createCustomElement(string)
-    this.myEle.innerHTML = ''
+    this.myEle.innerHTML = '';
     this.fetchElementFromDOM(selector).push(this.myEle)
 };
 
