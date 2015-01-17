@@ -3,27 +3,36 @@ var MyLibrary = function(){
 };
 
  MyLibrary.prototype.isTag = function(selector) {
-    selector[0] !== '.' && selector[0] !== '#'
+    console.log(selector[0])
+    if(selector[0] !== '.' && selector[0] !== '#')
     // this.elements = document.getElementsByTagName(selector);
     return true;
 };
 
-// MyLibrary.prototype.isClass = function(selector){
-//     this.elements = document.getElementsByClassName(selector);
-//     return true;
-// };
+MyLibrary.prototype.isClass = function(selector){
+    if(selector[0] === '.')
+    // this.elements = document.getElementsByClassName(selector);
+    return true;
+};
 
-// MyLibrary.prototype.isId = function(selector){
-//     this.elements = [document.getElementById(selector)];
-//     return true;
-// };
+MyLibrary.prototype.isId = function(selector){
+    if(selector[0] === '#')
+    // this.elements = [document.getElementById(selector)];
+    return true;
+};
 
-// // The following will not save the added elements, because the .add() 
-// // method creates a new set and leaves the original set in pdiv unchanged
 
 // MyLibrary.prototype.fetchElementFromDOM = function(selector){
 //     // if selector is a tag
-//     document.getElementsByTagName(selector);
+//     if(this.isTag(selector) === true){
+//     this.elements = document.getElementsByTagName(selector);
+//     }
+//     // if selector is a class
+//     else{
+//     this.elements = document.getElementsByClassName(selector);
+//         console.log('class selector');}
+    
+//     // if selector is an id
 // };
 
 
