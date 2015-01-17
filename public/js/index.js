@@ -31,16 +31,15 @@ MyLibrary.prototype.fetchElementFromDOM = function(selector){
     return this.elements
 };
 
-// gio.fetchElementFromDOM('div').forEach(function(ele){example.push(ele)}
-
-// gio.split("").forEach(function(ele, index){if(ele === '.') {console.log(index, gio.length)}}
-
 MyLibrary.prototype.createCustomElement = function(string){
     return this.myEle = document.createElement(string);
 };
 
-MyLibrary.prototype.addMe = function(){
-
+MyLibrary.prototype.addMe = function(string, selector){
+// this method is really peculiar!be aware that before adding you need to have a content
+    this.createCustomElement(string)
+    this.myEle.innerHTML = ''
+    this.fetchElementFromDOM(selector).push(this.myEle)
 };
 
 
