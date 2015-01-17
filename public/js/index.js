@@ -22,18 +22,22 @@ MyLibrary.prototype.isId = function(selector){
 };
 
 
-// MyLibrary.prototype.fetchElementFromDOM = function(selector){
-//     // if selector is a tag
-//     if(this.isTag(selector) === true){
-//     this.elements = document.getElementsByTagName(selector);
-//     }
-//     // if selector is a class
-//     else{
-//     this.elements = document.getElementsByClassName(selector);
-//         console.log('class selector');}
-    
-//     // if selector is an id
-// };
+MyLibrary.prototype.fetchElementFromDOM = function(selector){
+// if selector is a tag
+    if(this.isTag(selector) === true){
+        this.elements = document.getElementsByTagName(selector.slice(1))
+        console.log('i am a tag')
+    }
+// if selector is a class
+    if(this.isClass(selector) === true){
+        console.log('i am a class')
+    }
+// if selector is an id
+    if(this.isId(selector) === true){
+        console.log('i am an id')
+    }
+
+};
 
 
 // MyLibrary.prototype.addMe = function(){
