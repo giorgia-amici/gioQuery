@@ -1,6 +1,5 @@
 var MyLibrary = function(){
     this.myEle
-    this.newEle = [];
     this.elements = [];
 };
 
@@ -36,8 +35,8 @@ MyLibrary.prototype.createCustomElement = function(string){
     return this.myEle = document.createElement(string);
 };
 
-MyLibrary.prototype.addMyElement = function(string, selector){
-    this.createCustomElement(string)
+MyLibrary.prototype.addMyElement = function(selector, toAdd){
+    this.createCustomElement(toAdd)
     this.myEle.innerHTML = '';    //has to have a content
     this.fetchElementFromDOM(selector).push(this.myEle);
 };
@@ -53,6 +52,14 @@ MyLibrary.prototype.getAll = function(){
     return document.all
 };
 
+// similar to addMyElement but this method here appends
+// at the end of each matched element!
+MyLibrary.prototype.myAppend = function(selector, toAppend){
+    this.createCustomElement(toAppend)
+    this.myEle.innerHTML = ""
+    var ele = this.myEle
+    this.fetchElementFromDOM(selector).forEach(function(element){console.log(element, ele)})
+};
 
 
 
