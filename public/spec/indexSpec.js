@@ -44,8 +44,12 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("allows you to add a new element at the end of the selected node", function(){
+    	newElement = gioQuery.createCustomElement('p');
+    	console.log(newElement)
 
     });
+
+
 
 
 });
