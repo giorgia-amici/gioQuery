@@ -24,19 +24,20 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("returns elements by class name", function(){
-    	  elements = gioQuery.fetchElementFromDOM('img')[0]
-        expect(elements.outerHTML).toEqual("<img id=\"some_other_id\" class=\"some_class some_other_class\">")
+    		elements = gioQuery.fetchElementFromDOM('.some_class')[0]
     });
 
     it("returns element by id name", function(){
-
+    		elements = gioQuery.fetchElementFromDOM('#some_id')[0]
+    		expect(elements.outerHTML).toEqual('<div id="some_id" class="some_class some_other_class"></div>')
     });
 
     it("returns elements by tag name", function(){
-
+    	  elements = gioQuery.fetchElementFromDOM('img')[0]
+        expect(elements.outerHTML).toEqual('<img id="some_other_id" class="some_class some_other_class">')
     });
 
-//         expect(elements.outerHTML).toEqual("<img id=\"some_other_id\" class=\"some_class some_other_class\">")
+    
 
 
 });
