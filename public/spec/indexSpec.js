@@ -45,8 +45,17 @@ describe("a library for DOM manipulation", function() {
 
     it("allows you to add a new element at the end of the selected node", function(){
     	newElement = gioQuery.createCustomElement('p');
-    	console.log(newElement)
+    	newElement.innerHTML = "";
+    	elements = gioQuery.fetchElementFromDOM('.unique')
+    	elements.push(newElement);
+    	expect(elements.length).toEqual(2);
+    });
 
+    it("allows you to add a class to one of your html element", function(){
+    	myNewClassName = 'classGiorgia'
+    	elements = gioQuery.fetchElementFromDOM('#some_id');
+   		elements.forEach(function(element){element.className = myNewClassName})
+   		expect(elements[0].className).toEqual('classGiorgia');
     });
 
 
