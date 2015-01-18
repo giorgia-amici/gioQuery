@@ -1,6 +1,7 @@
 describe("a library for DOM manipulation", function() {
     var gioQuery;
     var elements;
+    var newElement;
 
     beforeEach(function() {
         gioQuery = new MyLibrary();
@@ -37,7 +38,14 @@ describe("a library for DOM manipulation", function() {
         expect(elements.outerHTML).toEqual('<img id="some_other_id" class="some_class some_other_class">')
     });
 
-    
+    it("allows you to create new DOM elements", function(){
+    	newElement = document.createElement('p');
+    	expect(newElement.outerHTML).toEqual("<p></p>");
+    });
+
+    it("allows you to add a new element at the end of the selected node", function(){
+
+    });
 
 
 });
