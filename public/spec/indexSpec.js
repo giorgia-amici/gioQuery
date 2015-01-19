@@ -2,6 +2,7 @@ describe("a library for DOM manipulation", function() {
     var gioQuery;
     var elements;
     var newElement;
+    var newArr;
 
     beforeEach(function() {
         gioQuery = new MyLibrary();
@@ -63,6 +64,14 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("allows you to append a new element at the end of each node", function(){
+        newElement = gioQuery.createCustomElement('img');
+        newElement.innerHTML = ""
+        // console.log(newElement);
+        elements = gioQuery.fetchElementFromDOM('.some_class');
+        // console.log(elements);
+        newArr = []
+        gioQuery.fetchElementFromDOM('.some_class').forEach(function(ele){newArr.push(ele)})
+        // console.log(newArr)
 
     });
 
