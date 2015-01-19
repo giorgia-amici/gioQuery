@@ -58,6 +58,14 @@ describe("a library for DOM manipulation", function() {
    		expect(elements[0].className).toEqual('classGiorgia');
     });
 
+    it("gets all the element of your HTML document", function(){
+        expect(document.all[0]).toBeDefined();
+    });
+
+    it("allows you to append a new element at the end of each node", function(){
+
+    });
+
 
 
 
