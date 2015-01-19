@@ -8,10 +8,10 @@ describe("a library for DOM manipulation", function() {
         gioQuery = new MyLibrary();
     });
 
-		it('is loaded', function(){
-			console.log(gioQuery);
-			expect(gioQuery).toBeDefined();
-		});
+	it('is loaded', function(){
+		console.log(gioQuery);
+		expect(gioQuery).toBeDefined();
+	});
 
     it("knows when a selector is a class", function() {
         expect(gioQuery.isClass('.class')).toEqual(true);
@@ -26,16 +26,16 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("returns elements by class name", function(){
-    		elements = gioQuery.fetchElementFromDOM('.some_class')[0]
+    	elements = gioQuery.fetchElementFromDOM('.some_class')[0]
     });
 
     it("returns element by id name", function(){
-    		elements = gioQuery.fetchElementFromDOM('#some_id')[0]
-    		expect(elements.outerHTML).toEqual('<div id="some_id" class="some_class some_other_class"></div>')
+		elements = gioQuery.fetchElementFromDOM('#some_id')[0]
+		expect(elements.outerHTML).toEqual('<div id="some_id" class="some_class some_other_class"></div>')
     });
 
     it("returns elements by tag name", function(){
-    	  elements = gioQuery.fetchElementFromDOM('img')[0]
+    	elements = gioQuery.fetchElementFromDOM('img')[0]
         expect(elements.outerHTML).toEqual('<img id="some_other_id" class="some_class some_other_class">')
     });
 
@@ -73,7 +73,6 @@ describe("a library for DOM manipulation", function() {
         gioQuery.fetchElementFromDOM('.some_class').forEach(function(ele){newArr.push(ele)})
         // console.log(newArr)
         // EXPECTATION GOES HERE
-
     });
 
     it("insert every element in the set of matched elements to the end of the target", function(){
