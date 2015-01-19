@@ -58,7 +58,7 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
     this.createCustomElement(toAppend)
     this.myEle.innerHTML = ""
     var ele = this.myEle
-    this.fetchElementFromDOM(selector).forEach(function(element){console.log(element, ele)})
+    // this.fetchElementFromDOM(selector).forEach(function(element){element, ele)})
 };
 
 

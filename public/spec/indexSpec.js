@@ -72,6 +72,19 @@ describe("a library for DOM manipulation", function() {
         newArr = []
         gioQuery.fetchElementFromDOM('.some_class').forEach(function(ele){newArr.push(ele)})
         // console.log(newArr)
+        // EXPECTATION GOES HERE
+
+    });
+
+    it("insert every element in the set of matched elements to the end of the target", function(){
+
+    });
+
+    it("get the value of an attribute for the first element in the set of matched elements or sets one", function(){
+
+    });
+
+    it("selects all button elements and elements of type button", function(){
 
     });
 
