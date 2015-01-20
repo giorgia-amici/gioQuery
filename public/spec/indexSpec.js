@@ -66,16 +66,14 @@ describe("a library for DOM manipulation", function() {
     it("allows you to append a new element at the end of each node", function(){
         newElement = gioQuery.createCustomElement('img');
         newElement.innerHTML = ""
-        // console.log(newElement);
         elements = gioQuery.fetchElementFromDOM('.some_class');
-        // console.log(elements);
         newArr = []
-        gioQuery.fetchElementFromDOM('.some_class').forEach(function(ele){newArr.push(ele)})
-        // console.log(newArr)
+        elements.forEach(function(ele){newArr.push(ele, newElement)})
+        console.log(newArr)
         // EXPECTATION GOES HERE
     });
 
-    it("insert every element in the set of matched elements to the end of the target", function(){
+    it("inserts every element in the set of matched elements to the end of the target", function(){
 
     });
 
