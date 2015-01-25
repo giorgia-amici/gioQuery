@@ -3,6 +3,7 @@ describe("a library for DOM manipulation", function() {
     var elements;
     var newElement;
     var newArr;
+    var parameterButton;
 
     beforeEach(function() {
         gioQuery = new MyLibrary();
@@ -68,8 +69,9 @@ describe("a library for DOM manipulation", function() {
         newElement.innerHTML = ""
         elements = gioQuery.fetchElementFromDOM('.some_class');
         newArr = []
-        elements.forEach(function(ele){newArr.push(ele, newElement)})
-        console.log(newArr)
+        elements.forEach(function(ele){elements.push(newElement)})
+        // console.log(newArr)
+        console.log(elements)
         // EXPECTATION GOES HERE
     });
 
@@ -82,7 +84,10 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("selects all button elements and elements of type button", function(){
-
+        parameterButton = ":button"
+        gioQuery.selectAllButtons(parameterButton)
+        // expect
+        
     });
 
 

@@ -61,6 +61,9 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
     // this.fetchElementFromDOM(selector).forEach(function(element){element, ele)})
 };
 
+MyLibrary.prototype.selectAllButtons = function(selector){
+
+};
 
 
 
