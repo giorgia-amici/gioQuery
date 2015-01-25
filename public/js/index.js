@@ -65,6 +65,7 @@ MyLibrary.prototype.selectAllButtons = function(selector){
     // needs to fetch the ones whose tag name is button
     this.fetchElementFromDOM('button')
     // needs to fetch also the one whose type is button
+    // $('input[type=button],select');
 };
 
 
