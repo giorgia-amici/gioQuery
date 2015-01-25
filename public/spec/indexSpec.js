@@ -84,10 +84,10 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("selects all button elements and elements of type button", function(){
-        parameterButton = ":button"
+        parameterButton = "button"
         gioQuery.selectAllButtons(parameterButton)
         // expect
-        
+
     });
 
 

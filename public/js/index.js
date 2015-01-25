@@ -61,9 +61,14 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
     // this.fetchElementFromDOM(selector).forEach(function(element){element, ele)})
 };
 
+MyLibrary.prototype.selectElementsByType = function(typeOfSelector){
+
+}
+
 MyLibrary.prototype.selectAllButtons = function(selector){
     // needs to fetch the ones whose tag name is button
     this.fetchElementFromDOM('button')
+    this()
     // needs to fetch also the one whose type is button
     // $('input[type=button],select');
 };
