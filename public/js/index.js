@@ -62,7 +62,7 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
 };
 
 MyLibrary.prototype.selectElementsByType = function(typeOfSelector){
-
+    // $('input[type=button],select');
 }
 
 MyLibrary.prototype.selectAllButtons = function(selector){
