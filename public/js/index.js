@@ -72,8 +72,6 @@ MyLibrary.prototype.selectAllButtons = function(selector){
     // needs to fetch also the one whose type is button
     // $('input[type=button],select');
 };
-
-
-
+3
 var gio = new MyLibrary();
 // 
