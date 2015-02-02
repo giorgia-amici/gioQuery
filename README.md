@@ -1,5 +1,7 @@
 #**gioQuery Library**
 
+(http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png)
+
 The aim of this project is to re-write using **TDD** the main methods of jQuery. This will give me a deeper knowledge of jQuery and JS.
 
 The testing framework used is **Jasmine** for Browser and Jasmine for console (using Grunt jasmine).
