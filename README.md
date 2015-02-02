@@ -1,7 +1,7 @@
 #**gioQuery Library**
 <div>
+<img src= http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png>
 <img src= http://vanilla-js.com/assets/vanillin-chemstruct.png http://vanilla-js.com/assets/vanillin-chemstruct.png>
-<img src= http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png width="100" height="100">
 </div>
 
 
