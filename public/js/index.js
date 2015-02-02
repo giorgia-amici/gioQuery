@@ -62,15 +62,17 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
 };
 
 MyLibrary.prototype.selectElementsByType = function(typeOfSelector){
-    // $('input[type=button],select');
+    // $('input[type=typeOfSelector]');
+    document.querySelectorAll('body')
+    
 }
 
 MyLibrary.prototype.selectAllButtons = function(selector){
+    // twofold method
     // needs to fetch the ones whose tag name is button
     this.fetchElementFromDOM('button')
-    this()
     // needs to fetch also the one whose type is button
-    // $('input[type=button],select');
+    // $('input[type=button]');
 };
 3
 var gio = new MyLibrary();
