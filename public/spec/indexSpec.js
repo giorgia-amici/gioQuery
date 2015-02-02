@@ -83,12 +83,19 @@ describe("a library for DOM manipulation", function() {
 
     });
 
-    it("selects all button elements and elements of type button", function(){
-        parameterButton = "button"
-        gioQuery.selectAllButtons(parameterButton)
-        // expect
-
+    it("selects elements just by type", function(){
+        var toTest = gioQuery.selectElementsByType()
+        console.log(toTest, '')
+        // expect(gioQuery.selectElementsByType().outerHTML).
+        // toEqual('<input type="button" class="ciao" value="Another useless button">')
     });
+
+    // it("selects all button elements and elements of type button", function(){
+    //     parameterButton = "button"
+    //     gioQuery.selectAllButtons(parameterButton)
+    //     // expect
+
+    // });
 
 
 
