@@ -1,8 +1,8 @@
 #**gioQuery Library**
-
+<div>
 <img src= http://vanilla-js.com/assets/vanillin-chemstruct.png http://vanilla-js.com/assets/vanillin-chemstruct.png>
-<img src= http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png width="80" height="80">
-
+<img src= http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png width="100" height="100">
+</div>
 
 
 The aim of this project is to re-write using **TDD** the main methods of jQuery. This will give me a deeper knowledge of jQuery and JS.
