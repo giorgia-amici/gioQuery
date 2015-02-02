@@ -13,4 +13,4 @@ The testing framework used is **Jasmine** for Browser and Jasmine for console (u
 * [jQuery API](http://api.jquery.com/).
 * [Jasmine DOCS](http://jasmine.github.io/2.0/introduction.html).
 * [Jasmine MATCHERS](https://github.com/JamieMason/Jasmine-Matchers).
-* [img src= https://img.shields.io/badge/Vanilla-JS-yellow.svg]()
+* [<img src= https://img.shields.io/badge/Vanilla-JS-yellow.svg>]()
