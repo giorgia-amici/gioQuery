@@ -4,6 +4,7 @@ describe("a library for DOM manipulation", function() {
     var newElement;
     var newArr;
     var parameterButton;
+    var inputType;
 
     beforeEach(function() {
         gioQuery = new MyLibrary();
@@ -32,7 +33,7 @@ describe("a library for DOM manipulation", function() {
 
     it("returns element by id name", function(){
 		elements = gioQuery.fetchElementFromDOM('#some_id')[0]
-		expect(elements.outerHTML).toEqual('<div id="some_id" class="some_class some_other_class"></div>')
+		expect(elements.outerHTML).toEqual('<div id="some_id" class="some_class some_other_class">Hi</div>')
     });
 
     it("returns elements by tag name", function(){
@@ -45,13 +46,13 @@ describe("a library for DOM manipulation", function() {
     	expect(newElement.outerHTML).toEqual("<p></p>");
     });
 
-    it("allows you to add a new element at the end of the selected node", function(){
-    	newElement = gioQuery.createCustomElement('p');
-    	newElement.innerHTML = "";
-    	elements = gioQuery.fetchElementFromDOM('.unique')
-    	elements.push(newElement);
-    	expect(elements.length).toEqual(2);
-    });
+    // it("allows you to add a new element at the end of the selected node", function(){
+    // 	newElement = gioQuery.createCustomElement('p');
+    // 	newElement.innerHTML = "";
+    // 	elements = gioQuery.fetchElementFromDOM('.unique')
+    // 	elements.push(newElement);
+    // 	expect(elements.length).toEqual(2);
+    // });
 
     it("allows you to add a class to one of your html element", function(){
     	myNewClassName = 'classGiorgia'
@@ -84,15 +85,15 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("selects elements just by type", function(){
-        var inputType = 'input[type=button]'
-        expect(gioQuery.selectElementsByType(inputType).outerHTML).toEqual('<input type="button" class="ciao" value="Another useless button">')
+        var inputTypeButton = 'input[type=button]'
+        expect(gioQuery.selectElementsByType(inputTypeButton).outerHTML).toEqual('<input type="button" class="ciao" value="Another useless button">')
     });
 
     // it("selects all button elements and elements of type button", function(){
     //     parameterButton = "button"
-    //     gioQuery.selectAllButtons(parameterButton)
-    //     // expect
-
+    //     inputTypeButton = 'input[type=button]'
+    //     gioQuery.selectAllButtons(parameterButton, inputTypeButton)
+    //     expect(gioQuery.selectAllButtons(parameterButton, inputTypeButton)).toEqual('c')
     // });
 
 
