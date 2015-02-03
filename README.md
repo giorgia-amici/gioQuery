@@ -1,5 +1,5 @@
 #**gioQuery Library**
-
+<img src = https://img.shields.io/badge/ONGOING-project-orange.svg>
 <div class="pics">
 <img src= http://www.paulund.co.uk/wp-content/uploads/2014/06/jquery-logo1.png>
 <img src= http://xitrus.es/blog/imgs/vnll.jpg>
