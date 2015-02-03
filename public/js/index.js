@@ -67,13 +67,12 @@ MyLibrary.prototype.selectElementsByType = function(inputType){
 
 };
 
-// MyLibrary.prototype.selectAllButtons = function(selector, inputType){
-//     // twofold method
-//     // needs to fetch the ones whose tag name is button
-//     this.fetchElementFromDOM(selector)
-//     // needs to fetch also the one whose type is button
-//     this.selectElementsByType(inputType)
-// };
+MyLibrary.prototype.selectAllButtons = function(selector, inputType){
+    // twofold method
+    // needs to fetch the ones whose tag name is button
+    // needs to fetch also the one whose type is button
+    return [this.fetchElementFromDOM(selector), this.selectElementsByType(inputType)]   
+};
 
 var gio = new MyLibrary();
 // 

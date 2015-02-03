@@ -4,7 +4,6 @@ describe("a library for DOM manipulation", function() {
     var newElement;
     var newArr;
     var parameterButton;
-    var inputType;
 
     beforeEach(function() {
         gioQuery = new MyLibrary();
@@ -47,7 +46,7 @@ describe("a library for DOM manipulation", function() {
     });
 
     // it("allows you to add a new element at the end of the selected node", function(){
-    // 	newElement = gioQuery.createCustomElement('p');
+    //     newElement = gioQuery.createCustomElement('p');
     // 	newElement.innerHTML = "";
     // 	elements = gioQuery.fetchElementFromDOM('.unique')
     // 	elements.push(newElement);
@@ -89,12 +88,12 @@ describe("a library for DOM manipulation", function() {
         expect(gioQuery.selectElementsByType(inputTypeButton).outerHTML).toEqual('<input type="button" class="ciao" value="Another useless button">')
     });
 
-    // it("selects all button elements and elements of type button", function(){
-    //     parameterButton = "button"
-    //     inputTypeButton = 'input[type=button]'
-    //     gioQuery.selectAllButtons(parameterButton, inputTypeButton)
-    //     expect(gioQuery.selectAllButtons(parameterButton, inputTypeButton)).toEqual('c')
-    // });
+    it("selects all button elements and elements of type button", function(){
+        parameterButton = "button"
+        var inputTypeButton = 'input[type=button]'
+        console.log(gioQuery.selectAllButtons(parameterButton, inputTypeButton))
+        expect(gioQuery.selectAllButtons(parameterButton, inputTypeButton)).toBeObject
+    });
 
 
 
