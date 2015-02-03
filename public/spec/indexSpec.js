@@ -75,7 +75,7 @@ describe("a library for DOM manipulation", function() {
         // EXPECTATION GOES HERE
     });
 
-    it("inserts every element in the set of matched elements to the end of the target", function(){
+    it("inserts every elemenb v b bb bvbt in the set of matched elements to the end of the target", function(){
 
     });
 
@@ -84,10 +84,8 @@ describe("a library for DOM manipulation", function() {
     });
 
     it("selects elements just by type", function(){
-        var toTest = gioQuery.selectElementsByType()
-        console.log(toTest, '')
-        // expect(gioQuery.selectElementsByType().outerHTML).
-        // toEqual('<input type="button" class="ciao" value="Another useless button">')
+        var inputType = 'input[type=button]'
+        expect(gioQuery.selectElementsByType(inputType).outerHTML).toEqual('<input type="button" class="ciao" value="Another useless button">')
     });
 
     // it("selects all button elements and elements of type button", function(){

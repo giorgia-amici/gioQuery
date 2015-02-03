@@ -62,19 +62,18 @@ MyLibrary.prototype.myAppend = function(selector, toAppend){
     // this.fetchElementFromDOM(selector).forEach(function(element){element, ele)})
 };
 
-MyLibrary.prototype.selectElementsByType = function(){
-   this.myType = document.querySelector('input[type=button]')
-   console.log(this.myType)
+MyLibrary.prototype.selectElementsByType = function(inputType){
+   return this.myType = document.querySelector(inputType)
 
 };
 
-// MyLibrary.prototype.selectAllButtons = function(selector){
-//     // twofold method
-//     // needs to fetch the ones whose tag name is button
-//     this.fetchElementFromDOM('button')
-//     // needs to fetch also the one whose type is button
-//     // $('input[type=button]');
-// };
+MyLibrary.prototype.selectAllButtons = function(selector, inputType){
+    // twofold method
+    // needs to fetch the ones whose tag name is button
+    this.fetchElementFromDOM(selector)
+    // needs to fetch also the one whose type is button
+    this.selectElementsByType(inputType)
+};
 
 var gio = new MyLibrary();
 // 
