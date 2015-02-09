@@ -5,7 +5,6 @@
 <img src= http://xitrus.es/blog/imgs/vnll.jpg>
 </div>
 
-
 The aim of this project is to re-write using **TDD** the main methods of jQuery. This will give me a deeper knowledge of jQuery and JS.
 
 The testing framework used is **Jasmine** for Browser and **Jasmine** for **console** (using Grunt jasmine). __Click__ on the buttons below for documentation.
