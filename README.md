@@ -8,7 +8,6 @@
 The aim of this project is to re-write using **TDD** the main methods of jQuery. This will give me a deeper knowledge of jQuery and JS.
 
 The testing framework used is **Jasmine** for Browser and **Jasmine** for **console** (using Grunt jasmine). __Click__ on the buttons below for documentation.
-
 [<img src= https://img.shields.io/badge/jQuery-JS-blue.svg>](http://api.jquery.com/)
 [<img src=https://img.shields.io/badge/Jasmine-TDD-ff69b4.svg>](http://jasmine.github.io/2.0/introduction.html)
 [<img src=https://img.shields.io/badge/Jasmine-Matchers-green.svg>](https://github.com/JamieMason/Jasmine-Matchers)
