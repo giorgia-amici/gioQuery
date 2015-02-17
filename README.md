@@ -12,3 +12,4 @@ The testing framework used is **Jasmine** for Browser and **Jasmine** for **cons
 [<img src=https://img.shields.io/badge/Jasmine-TDD-ff69b4.svg>](http://jasmine.github.io/2.0/introduction.html)
 [<img src=https://img.shields.io/badge/Jasmine-Matchers-green.svg>](https://github.com/JamieMason/Jasmine-Matchers)
 [<img src= https://img.shields.io/badge/Vanilla-JS-yellow.svg>](http://vanilla-js.com/)
+__.

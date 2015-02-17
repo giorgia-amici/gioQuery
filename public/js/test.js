@@ -1,3 +1,3 @@
 function helloWorld(){
-    return 'helloWorld...busy word';
+    return 'helloWorld...beautiful world';
 }
